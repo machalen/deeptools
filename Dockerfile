@@ -12,7 +12,7 @@ MAINTAINER Magdalena Arnal, marnal@imim.es
 RUN apt-get update && apt-get install --yes build-essential
 
 #Install pip and deeptools required libraries
-RUN apt-get install --yes python-pip libpython2.7-dev zlib1g-dev
+RUN apt-get install --yes python-pip libpython2.7-dev zlib1g-dev libbz2-dev
 
 #Install requirements
 RUN pip install numpy scipy py2bit pyBigWig pysam matplotlib
